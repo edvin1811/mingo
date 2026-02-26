@@ -9,7 +9,7 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Music Bingo - Guess Songs, Win Games",
+  title: "Mingo - Guess Songs, Win Games",
   description:
     "Listen to songs, guess the title, and compete with friends in real-time music bingo. Available on iOS.",
 };

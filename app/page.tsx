@@ -1,11 +1,17 @@
+import Image from "next/image";
+import appIcon from "./appicon.jpg";
+
 export default function Home() {
   return (
     <main className="flex min-h-[90vh] flex-col items-center justify-center px-6 py-24">
       <div className="text-center max-w-lg">
-        {/* App icon placeholder */}
-        <div className="mx-auto mb-8 flex h-28 w-28 items-center justify-center rounded-[28px] bg-green text-5xl shadow-lg">
-          🎵
-        </div>
+        <Image
+          src={appIcon}
+          alt="Mingo app icon"
+          width={112}
+          height={112}
+          className="mx-auto mb-8 rounded-[28px] shadow-lg"
+        />
 
         <h1 className="text-4xl font-bold tracking-tight">Music Bingo</h1>
 
