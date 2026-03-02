@@ -31,6 +31,9 @@ export default function RootLayout({
             <Link href="/privacy" className="hover:text-gray-700">
               Privacy Policy
             </Link>
+            <Link href="/terms" className="hover:text-gray-700">
+              Terms of Use
+            </Link>
           </div>
           <p className="mt-4">&copy; {new Date().getFullYear()} Cool Studio. All rights reserved.</p>
         </footer>
