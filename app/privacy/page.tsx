@@ -1,19 +1,19 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Music Bingo",
+  title: "Privacy Policy - Mingo",
 };
 
 export default function PrivacyPolicy() {
   return (
     <main className="mx-auto max-w-2xl px-6 py-16">
       <h1 className="text-3xl font-bold">Privacy Policy</h1>
-      <p className="mt-2 text-sm text-gray-500">Last updated: February 26, 2026</p>
+      <p className="mt-2 text-sm text-gray-500">Last updated: October 1, 2026</p>
 
       <div className="mt-8 space-y-8 text-gray-700 leading-relaxed [&_h2]:text-xl [&_h2]:font-semibold [&_h2]:text-gray-900 [&_ul]:list-disc [&_ul]:pl-6 [&_ul]:space-y-1">
         <section>
           <p>
-            Cool Studio (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) operates the Music Bingo
+            Cool Studio (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;) operates Mingo: Music Bingo, a
             mobile application (the &quot;App&quot;). This Privacy Policy explains how we collect, use,
             and protect your information when you use our App.
           </p>
@@ -26,11 +26,50 @@ export default function PrivacyPolicy() {
           <ul>
             <li>
               <strong>Display name</strong> &mdash; a username you choose, visible to other players on
-              leaderboards and in game rooms.
+              leaderboards and in game rooms. Other signed-in players can find you by typing your exact
+              username, to send you a friend request.
             </li>
             <li>
               <strong>Email address</strong> &mdash; collected only if you sign up with email or if your
               Apple ID shares it during Sign in with Apple. Used solely for account authentication.
+            </li>
+          </ul>
+
+          <p className="mt-3 font-medium">Avatar and Public Profile</p>
+          <ul>
+            <li>
+              <strong>Avatar</strong> &mdash; the character you build from the App&apos;s own parts (skin
+              tone, hair, eyes, hats, outfits). It is not a photo and contains no image of you.
+            </li>
+            <li>
+              <strong>Public profile</strong> &mdash; your username, avatar and whether you have Mingo Pro.
+              Other signed-in players can see it in game rooms, on leaderboards and in friend lists.
+            </li>
+          </ul>
+
+          <p className="mt-3 font-medium">Friends and Invites</p>
+          <ul>
+            <li>
+              <strong>Friend list</strong> &mdash; the players you and they have both agreed to be friends
+              with. Only the two of you can see that friendship.
+            </li>
+            <li>
+              <strong>Friend requests</strong> &mdash; who sent a request to whom, with the sender&apos;s
+              username and avatar. Only the sender and the recipient can see a request.
+            </li>
+            <li>
+              <strong>Game invites</strong> &mdash; when you invite a friend into a game: who sent it, who
+              it is for, the room code and the quiz name. Invites can only be sent between friends, and are
+              deleted once answered or after 30 minutes.
+            </li>
+          </ul>
+
+          <p className="mt-3 font-medium">Guests</p>
+          <ul>
+            <li>
+              You can play without an account. Guests get an anonymous account so games work, and choose a
+              username that other players see in game rooms. Guests do not appear on leaderboards and
+              cannot have an avatar, friends or invites.
             </li>
           </ul>
 
@@ -76,7 +115,11 @@ export default function PrivacyPolicy() {
           <h2>3. How We Use Your Information</h2>
           <ul>
             <li>To authenticate your account and let you sign in across sessions.</li>
-            <li>To display your chosen username to other players in game rooms and on leaderboards.</li>
+            <li>
+              To show your username, avatar and Pro status to other players in game rooms, on leaderboards
+              and in friend lists.
+            </li>
+            <li>To let you add friends, answer friend requests and invite friends into games.</li>
             <li>To track and display your game statistics and leaderboard rankings.</li>
             <li>To manage your premium subscription status.</li>
           </ul>
@@ -101,15 +144,15 @@ export default function PrivacyPolicy() {
               .
             </li>
             <li>
-              <strong>Superwall</strong> &mdash; for managing in-app subscription paywalls. Your
-              Firebase user ID is shared with Superwall to manage subscription state. See{" "}
+              <strong>Apple App Store</strong> &mdash; subscriptions are bought and managed through the App
+              Store. Apple handles payment; we never receive your payment details. See{" "}
               <a
-                href="https://superwall.com/privacy"
+                href="https://www.apple.com/legal/privacy/"
                 className="text-green-dark underline"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Superwall Privacy Policy
+                Apple Privacy Policy
               </a>
               .
             </li>
@@ -133,9 +176,11 @@ export default function PrivacyPolicy() {
         <section>
           <h2>6. Data Retention</h2>
           <p>
-            We retain your account data (username, email, game statistics) for as long as your account is
-            active. If you wish to delete your account and associated data, please contact us at the email
-            address below.
+            We retain your account data (username, email, game statistics, avatar, friends) for as long as
+            your account is active. You can delete your account at any time in the App under Account &rarr;
+            Settings &rarr; Delete account. This permanently deletes your account, profile, avatar, game
+            statistics, leaderboard entries, friends, friend requests and game invites. You can also ask us
+            to delete it at the email address below.
           </p>
         </section>
 
@@ -154,6 +199,7 @@ export default function PrivacyPolicy() {
           <ul>
             <li>Request access to the personal data we hold about you.</li>
             <li>Request correction or deletion of your personal data.</li>
+            <li>Remove a friend, or decline a friend request, at any time.</li>
             <li>Withdraw consent at any time by deleting your account.</li>
           </ul>
         </section>
